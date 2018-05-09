@@ -1,5 +1,5 @@
 
-export default {
+module.exports = {
 
     /**
      * 查询数组序列
