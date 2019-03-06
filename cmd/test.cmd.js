@@ -12,8 +12,15 @@ const Handle = (options, data) => new Promise((resolve, reject) => {
     params = params ? params.toLocaleLowerCase() : '';
     if (!params)
         return reject('未指定执行 test文件');
-    let dir = path.join(__dirname, '../', params);
-    return resolve(dir);
+    parameters.slice(1).forEach((item, index) => {
+        try {
+            let dir = path.join(__dirname, `../test/${item}.test.js`);
+            require(dir);
+        } catch (e) {
+            reject(e);
+        }
+    });
+    return resolve();
 });
 
 // 参数 options
