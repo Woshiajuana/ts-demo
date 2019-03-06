@@ -10,9 +10,11 @@ import {
 let x = [1,2,3];
 let y = [2,3,4];
 
-log(`测试 parseStringify ==========================`);
-log(`拷贝x：`, parseStringify(x));
-log(`比较x与拷贝x的值是否一致：`, parseStringify(x) === x);
+// log(`测试 parseStringify ==========================`);
+// log(`拷贝x：`, parseStringify(x));
+// log(`比较x与拷贝x的值是否一致：`, parseStringify(x) === x);
 
 log(`测试 extend ==========================`);
-log(extend({ x:1, y:2 }, { x:3, z: 3}));
+log(extend(true, [1,2,3], [4,5,6]));
+log(extend(true, [1,2,3], [4,5,6], {x:1}));
+log(extend(true, [1,2,3], [4,5,6], {x:1}));
