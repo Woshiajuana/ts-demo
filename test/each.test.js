@@ -1,19 +1,19 @@
 
 import log                  from './../uitl/log.util'
 import each                 from './../lib/each.lib'
-// each(arr, (item, index) => {
-//     log(item);
-//     if (item === 'two') {
-//         arr.shift();
-//     }
-// });
+each(arr, (item, index) => {
+    log(item);
+    if (item === 'two') {
+        arr.shift();
+    }
+});
 
-// arr.forEach( (item, index) => {
-//     log(item);
-//     if (item === 'two') {
-//         arr.shift();
-//     }
-// });
+arr.forEach( (item, index) => {
+    log(item);
+    if (item === 'two') {
+        arr.shift();
+    }
+});
 
 
 let per = ['one', 'two', 'three', 'four'];
