@@ -54,4 +54,37 @@ function bSort (arr) {
 }
 
 
-console.log(sort([3,2,1]));
+function formatMoney (s) {
+    s = s + '';
+    if (s === '0')
+        return s;
+    let l = s.split('.')[0].split('').reverse();
+    let t = '';
+    l.forEach((ll, key) => {
+        t += l[key] + ((key + 1) % 3 === 0 && (key + 1) !== l.length ? ',' : '');
+    });
+    return t.split('').reverse().join('');
+}
+
+function formatCalculator (number) {
+    number = number + '';
+    if (number === '0') return number;
+    let arr = number.split('').reverse();
+    let result = '';
+    let index = 0;
+    let symbol = ['+', '-', '*', '/', '='];
+    arr.forEach((item, i) => {
+        index++;
+        if (symbol.indexOf(item) > -1) {
+            index = 0;
+            result += item;
+        } else {
+            result += item + ((index % 3 === 0 && index !== 0 && arr[i+1] && symbol.indexOf(arr[i+1]) === -1) ? ',' : '');
+        }
+    });
+    return result.split('').reverse().join('');
+}
+
+
+console.log(formatCalculator('123456+789=10002'));
+console.log(formatCalculator('2312312+1=321312'));
