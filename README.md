@@ -1,8 +1,2 @@
-### install
 
-> npm install
-
-### run
-
-> ./start
-
+# wow-cool
