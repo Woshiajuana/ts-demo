@@ -5,6 +5,7 @@
     "target": "es2015",
     "sourceMap": false,
     "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
     "declaration": true
   }
 }
