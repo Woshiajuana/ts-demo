@@ -4,6 +4,7 @@
   "description": "> npm install",
   "main": "index.js",
   "scripts": {
+    "start": "live-server --port=9527 --open=./examples",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/Woshiajuana/wow-cool#readme",
   "dependencies": {},
   "devDependencies": {
+    "live-server": "^1.2.1",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.2"
   }

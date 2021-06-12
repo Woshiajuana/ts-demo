@@ -17,8 +17,7 @@ interface IStorage {
 
 const setItem = function<T> (fn: typeFn, key: string, value: T, expire: number) : T {
     const storage = window[fn];
-    const data: IStorageData<T> = { key, value, expire };
-    storage.setItem(key, JSON.stringify(data));
+    storage.setItem(key, JSON.stringify({ key, value, expire }));
     return value;
 };
 
@@ -28,7 +27,7 @@ const getItem = function<T>(fn: typeFn, key: string, defValue: T | null) {
     if (data === null) {
         return defValue;
     }
-    const { expire, value } = (JSON.parse(data) as IStorageData<T>);
+    const { expire, value } = JSON.parse(data) as IStorageData<T>;
     if (expire === -1 || Date.now() < expire) {
         return value;
     }
