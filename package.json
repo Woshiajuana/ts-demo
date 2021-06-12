@@ -2,7 +2,7 @@
   "name": "wow-cool",
   "version": "0.0.4",
   "description": "> npm install",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "start": "live-server --port=9527 --open=./examples",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,8 +11,22 @@
     "type": "git",
     "url": "git+https://github.com/Woshiajuana/wow-cool.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "wow",
+    "lib",
+    "helper"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "package.json",
+    "tsconfig.json"
+  ],
+  "author": {
+    "name": "Ajuan",
+    "email": "zhigang.chen@owulia.com",
+    "url": "https://ajuan.owulia.com/"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Woshiajuana/wow-cool/issues"
@@ -20,8 +34,6 @@
   "homepage": "https://github.com/Woshiajuana/wow-cool#readme",
   "dependencies": {},
   "devDependencies": {
-    "live-server": "^1.2.1",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "live-server": "^1.2.1"
   }
 }
