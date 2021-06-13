@@ -1,6 +1,6 @@
 {
   "name": "wow-cool",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "> npm install",
   "main": "./dist/index.js",
   "scripts": {

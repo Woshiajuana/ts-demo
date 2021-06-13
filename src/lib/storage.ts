@@ -74,8 +74,3 @@ export const local: IStorage = {
     updateItem: (key, value, expire?) => updateItem('localStorage', key, value, expire),
     clear: () => clear('localStorage'),
 };
-
-export default {
-    cache,
-    local,
-}
