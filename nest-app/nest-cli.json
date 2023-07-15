@@ -6,7 +6,10 @@
   "root": "apps/nest-app",
   "compilerOptions": {
     "webpack": true,
-    "tsConfigPath": "apps/nest-app/tsconfig.app.json"
+    "tsConfigPath": "apps/nest-app/tsconfig.app.json",
+    "assets": [
+       "**/*.yaml"
+    ]
   },
   "projects": {
     "nest-app": {
