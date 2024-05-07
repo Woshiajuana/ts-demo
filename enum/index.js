@@ -6,6 +6,7 @@ var Demo2;
 console.log('Demo1 A => ', "a" /* Demo1.A */);
 console.log('Demo2 A => ', Demo2.A);
 var x = 1;
+console.log('Demo3 B => ', 2 /* Demo3.B */);
 var Demo4;
 (function (Demo4) {
     Demo4[Demo4["A"] = 1] = "A";

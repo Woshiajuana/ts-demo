@@ -17,8 +17,9 @@ const x = 1
 const enum Demo3{
   A = 1,
   B = A * 2,
-  C = x * 3
+  C = x * 3 // error const enum member initializers can only contain literal values and other computed enum values.
 }
+console.log('Demo3 B => ', Demo3.B)
 
 enum Demo4 {
   A = 1,
