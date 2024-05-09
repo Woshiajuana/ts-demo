@@ -26,3 +26,5 @@ enum Demo4 {
   B = A * 2,
   C = x * 3
 }
+
+export {}
