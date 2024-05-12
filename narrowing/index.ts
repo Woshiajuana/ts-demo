@@ -1,4 +1,11 @@
 type voidFunc = () => void;
+type X  = {
+  x: string
+}
+
+interface XX extends X {
+  xx: number
+}
 
 const f1: voidFunc = () => {
   return true;
@@ -23,5 +30,22 @@ function callMeMaybe(callback: () => void) {
 // expects void-returning function
 callMeMaybe(doSomething);
 
-
 export{}
+
+interface Shape {}
+declare function getShape(): Shape;
+
+interface PaintOptions {
+  shape: Shape;
+  xPos?: number;
+  yPos?: number;
+}
+
+// ---cut---
+function paintShape({ shape, xPos = 0, yPos = 0 }: PaintOptions) {
+  console.log("x coordinate at", xPos);
+  //                             ^?
+  console.log("y coordinate at", yPos);
+  //                             ^?
+  // ...
+}
