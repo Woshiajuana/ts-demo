@@ -1,4 +1,4 @@
-Intrinsic  应 劝升可
+Intrinsic  应 劝c可
 
 Elements
 
@@ -17,3 +17,9 @@ Validation
 ambient
 
 declare
+
+unique
+
+iterator
+
+inference
