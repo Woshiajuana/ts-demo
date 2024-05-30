@@ -13,5 +13,5 @@ var Demo4;
 (function (Demo4) {
     Demo4[Demo4["A"] = 1] = "A";
     Demo4[Demo4["B"] = 2] = "B";
-    Demo4[Demo4["C"] = 3] = "C";
+    Demo4[Demo4["C"] = x * 3] = "C";
 })(Demo4 || (Demo4 = {}));

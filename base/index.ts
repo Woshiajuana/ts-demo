@@ -32,3 +32,12 @@ s = a; // OK
 
 let xx: never;
 let xxx: unknown = xx; // OK
+
+
+function g() {
+  return Promise.reject("error!");
+}
+async function f() {
+  await using x = new C();
+  return g(); // missing an `await`
+}
