@@ -1,4 +1,8 @@
 {
   "name": "module-module-resolution",
-  "type": "module"
+  "dependencies": {
+    "@daysnap/utils": "^0.0.97",
+    "unplugin-vue-components": "^0.27.0",
+    "unplugin-vue-markdown": "^0.26.2"
+  }
 }

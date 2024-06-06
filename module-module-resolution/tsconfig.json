@@ -6,8 +6,8 @@
     "jsx": "preserve",                                
     
     /* Modules */
-    "module": "node16",                              
-    "moduleResolution": "node16",
+    "module": "CommonJS",                              
+    "moduleResolution": "Node",
    
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
